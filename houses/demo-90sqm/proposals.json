@@ -1,0 +1,104 @@
+{
+  "house": {
+    "name": "示例 90㎡ 三房（圣都 AEs vs A5s）",
+    "city": "示例城市",
+    "salesAreaSqm": 90,
+    "pricingAreaSqm": 76.34,
+    "layout": "三房一卫",
+    "isPublicDemo": true
+  },
+  "proposals": {
+    "aes": {
+      "company": "圣都整装",
+      "packageName": "AEs",
+      "version": "2025-宣传页",
+      "pricing": {
+        "hardBase": 65000,
+        "areaOverage": {
+          "areaSqm": 26.34,
+          "unitPrice": 699,
+          "amount": 18411.66
+        },
+        "customBoard": {
+          "particle": 13000,
+          "solidWood": 16000
+        },
+        "managementFee": 10009.4,
+        "projectManagerFee": 1668.23,
+        "totals": {
+          "baseParticle": 96411.66,
+          "baseSolidWood": 99411.66,
+          "withFeesParticle": 108089.29,
+          "withFeesSolidWood": 111089.29
+        }
+      },
+      "lineItems": [
+        { "space": "客餐厅", "category": "地砖+踢脚线", "brands": "马可波罗/东鹏/欧神诺/蒙娜丽莎", "termSlugs": ["tile"] },
+        { "space": "客餐厅", "category": "腻子基层", "brands": "东方雨虹", "termSlugs": ["putty"] },
+        { "space": "客餐厅", "category": "乳胶漆", "brands": "多乐士/嘉宝莉", "termSlugs": ["latex-paint"] },
+        { "space": "客餐厅", "category": "入户/门套", "brands": "升升概念/江山欧派/派的门", "termSlugs": ["door-frame"] },
+        { "space": "客餐厅", "category": "强电电线", "brands": "中大元通/东方电缆", "termSlugs": ["strong-electric"] },
+        { "space": "客餐厅", "category": "弱电电线", "brands": "永鼎", "termSlugs": ["weak-electric"] },
+        { "space": "客餐厅", "category": "开关插座", "brands": "西门子", "termSlugs": ["switch-socket"] },
+        { "space": "客餐厅", "category": "全屋定制品牌", "brands": "志邦/金牌/莫干山/兔宝宝", "termSlugs": ["custom-board-particle"] },
+        { "space": "厨房", "category": "橱柜", "brands": "金牌（约3m地柜+1.5m吊柜）", "termSlugs": ["cabinet"] },
+        { "space": "卧室", "category": "复合地板+踢脚线", "brands": "德尔/莫干山/书香门地", "termSlugs": ["laminate-floor"] },
+        { "space": "卧室", "category": "木开门+五金", "brands": "升升概念/派的门/江山欧派", "termSlugs": ["door-frame"] },
+        { "space": "阳台", "category": "专业防水", "brands": "东方雨虹", "termSlugs": ["waterproof"] },
+        { "space": "卫生间", "category": "专业防水", "brands": "东方雨虹", "termSlugs": ["waterproof"] },
+        { "space": "卫生间", "category": "浴室柜/龙头/马桶/花洒", "brands": "九牧/箭牌/惠达", "termSlugs": ["bathroom-suite"] },
+        { "space": "卫生间", "category": "淋浴房", "brands": "宣传页本段未明确单列", "notes": "待门店确认是否含淋浴房", "termSlugs": ["shower-enclosure"] }
+      ],
+      "notes": [
+        "50≤计价面积<80 档公式：硬装 65000 + (面积-50)×699",
+        "含 15㎡ 全屋定制；管理费按硬装 12%，项目经理费约 2%"
+      ]
+    },
+    "a5s": {
+      "company": "圣都整装",
+      "packageName": "A5s",
+      "version": "2025-宣传页",
+      "pricing": {
+        "hardBase": 75800,
+        "areaOverage": {
+          "areaSqm": 26.34,
+          "unitPrice": 799,
+          "amount": 21045.66
+        },
+        "customBoard": {
+          "particle": 13000,
+          "solidWood": 16000
+        },
+        "managementFee": 11621.48,
+        "projectManagerFee": 1936.91,
+        "totals": {
+          "baseParticle": 109845.66,
+          "baseSolidWood": 112845.66,
+          "withFeesParticle": 123404.05,
+          "withFeesSolidWood": 126404.05
+        }
+      },
+      "lineItems": [
+        { "space": "客餐厅", "category": "地砖+踢脚线", "brands": "马可波罗/东鹏/欧神诺/蒙娜丽莎", "termSlugs": ["tile"] },
+        { "space": "客餐厅", "category": "腻子基层", "brands": "东方雨虹", "termSlugs": ["putty"] },
+        { "space": "客餐厅", "category": "乳胶漆", "brands": "多乐士/嘉宝莉", "termSlugs": ["latex-paint"] },
+        { "space": "客餐厅", "category": "入户/门套", "brands": "TATA/升升概念/江山欧派/派的门", "notes": "A5s优势：可选TATA", "termSlugs": ["door-frame"] },
+        { "space": "客餐厅", "category": "强电电线", "brands": "飞利浦/中大元通/东方电缆", "notes": "A5s优势：可选飞利浦", "termSlugs": ["strong-electric"] },
+        { "space": "客餐厅", "category": "弱电电线", "brands": "飞利浦/永鼎", "termSlugs": ["weak-electric"] },
+        { "space": "客餐厅", "category": "开关插座", "brands": "西门子", "termSlugs": ["switch-socket"] },
+        { "space": "客餐厅", "category": "全屋定制品牌", "brands": "志邦/金牌/莫干山/兔宝宝", "termSlugs": ["custom-board-particle"] },
+        { "space": "厨房", "category": "橱柜", "brands": "志邦/金牌/莫干山/兔宝宝", "notes": "A5s优势：品牌可选更多", "termSlugs": ["cabinet"] },
+        { "space": "卧室", "category": "复合地板+踢脚线", "brands": "德尔/莫干山/书香门地/大自然", "notes": "A5s优势：多大自然", "termSlugs": ["laminate-floor"] },
+        { "space": "卧室", "category": "木开门+五金", "brands": "TATA/升升概念/江山欧派/派的门", "notes": "A5s优势：可选TATA", "termSlugs": ["door-frame"] },
+        { "space": "阳台", "category": "专业防水", "brands": "西卡/东方雨虹", "notes": "A5s优势：可选西卡", "termSlugs": ["waterproof"] },
+        { "space": "卫生间", "category": "专业防水", "brands": "西卡/东方雨虹", "termSlugs": ["waterproof"] },
+        { "space": "卫生间", "category": "浴室柜/龙头/马桶/花洒", "brands": "九牧/箭牌/惠达", "termSlugs": ["bathroom-suite"] },
+        { "space": "卫生间", "category": "淋浴房", "brands": "建霖智家/37°C2（约≤3.6㎡）", "notes": "A5s优势：明确含淋浴房", "termSlugs": ["shower-enclosure"] }
+      ],
+      "notes": [
+        "50≤计价面积<80 档公式：硬装 75800 + (面积-50)×799",
+        "相对 AEs 颗粒板含费预估贵约 15314.76 元（76.34㎡）"
+      ]
+    }
+  }
+}

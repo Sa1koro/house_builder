@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.dev/schemas/brand.json",
+  "title": "Brand",
+  "type": "object",
+  "required": ["name", "slug", "categories", "tier"],
+  "properties": {
+    "name": { "type": "string" },
+    "slug": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["entry", "mainstream", "first_tier", "premium"]
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "summary": { "type": "string" },
+    "source": {
+      "type": "string",
+      "enum": ["seed", "enrich", "editor"]
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}
