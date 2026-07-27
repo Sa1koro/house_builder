@@ -69,19 +69,21 @@ export async function enrichEntity(kind: "brand" | "term", query: string) {
     let entity: Record<string, unknown> & { id: string };
     let value: z.infer<typeof brandResult> | z.infer<typeof termResult>;
     if (kind === "brand") {
-      value = brandResult.parse(parsed);
-      const slug = safeSlug(value.slug || value.name);
+      const brand = brandResult.parse(parsed);
+      value = brand;
+      const slug = safeSlug(brand.slug || brand.name);
       const { data, error } = await admin.from("brands").upsert({
-        slug, name: value.name, category: value.category, tier: value.tier,
-        summary: value.summary, aliases: value.aliases, source: "enrich", confidence: 0.7,
+        slug, name: brand.name, category: brand.category, tier: brand.tier,
+        summary: brand.summary, aliases: brand.aliases, source: "enrich", confidence: 0.7,
       }, { onConflict: "slug" }).select("*").single();
       if (error) throw error;
       entity = data;
     } else {
-      value = termResult.parse(parsed);
-      const slug = safeSlug(value.slug || value.name);
+      const term = termResult.parse(parsed);
+      value = term;
+      const slug = safeSlug(term.slug || term.name);
       const { data, error } = await admin.from("terms").upsert({
-        slug, name: value.name, summary: value.summary, aliases: value.aliases,
+        slug, name: term.name, summary: term.summary, aliases: term.aliases,
         source: "enrich", confidence: 0.7,
       }, { onConflict: "slug" }).select("*").single();
       if (error) throw error;
