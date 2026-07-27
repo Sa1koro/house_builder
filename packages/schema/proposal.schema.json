@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.dev/schemas/proposal.json",
+  "title": "Proposal",
+  "type": "object",
+  "required": ["company", "packageName", "pricing", "lineItems"],
+  "properties": {
+    "company": { "type": "string" },
+    "packageName": { "type": "string" },
+    "version": { "type": "string" },
+    "pricing": {
+      "type": "object",
+      "required": ["hardBase", "areaOverage", "customBoard", "totals"],
+      "properties": {
+        "hardBase": { "type": "number" },
+        "areaOverage": {
+          "type": "object",
+          "properties": {
+            "areaSqm": { "type": "number" },
+            "unitPrice": { "type": "number" },
+            "amount": { "type": "number" }
+          }
+        },
+        "customBoard": {
+          "type": "object",
+          "properties": {
+            "particle": { "type": "number" },
+            "solidWood": { "type": "number" }
+          }
+        },
+        "managementFee": { "type": "number" },
+        "projectManagerFee": { "type": "number" },
+        "totals": {
+          "type": "object",
+          "properties": {
+            "baseParticle": { "type": "number" },
+            "baseSolidWood": { "type": "number" },
+            "withFeesParticle": { "type": "number" },
+            "withFeesSolidWood": { "type": "number" }
+          }
+        }
+      }
+    },
+    "lineItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["space", "category", "brands"],
+        "properties": {
+          "space": { "type": "string" },
+          "category": { "type": "string" },
+          "brands": { "type": "string" },
+          "spec": { "type": "string" },
+          "termSlugs": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

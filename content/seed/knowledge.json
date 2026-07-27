@@ -1,0 +1,172 @@
+{
+  "terms": [
+    {
+      "slug": "pricing-area",
+      "title": "计价面积",
+      "definition": "装修公司用于报价的面积，通常不等于房产证或售卖面积，需按合同约定的折算规则（如套内+公摊系数）计算。",
+      "category": "报价",
+      "aliases": ["报价面积", "结算面积"]
+    },
+    {
+      "slug": "door-frame",
+      "title": "门套",
+      "definition": "门框外侧的装饰套线，用于收口墙面与门洞，材质多为密度板或实木复合，品牌差异影响静音与环保等级。",
+      "category": "硬装"
+    },
+    {
+      "slug": "strong-electric",
+      "title": "强电",
+      "definition": "220V 家用动力与照明线路，含电线、线管、底盒、配电箱等，需符合国标铜芯线径要求。",
+      "category": "水电"
+    },
+    {
+      "slug": "weak-electric",
+      "title": "弱电",
+      "definition": "网络、电话、有线电视、安防等低电压线路，需与强电分管分槽，常见超五类/六类网线。",
+      "category": "水电"
+    },
+    {
+      "slug": "management-fee",
+      "title": "工程管理费",
+      "definition": "装修公司按硬装造价比例收取的管理费用，圣都宣传页常见为硬装造价的 12%，全屋定制部分可能免收。",
+      "category": "报价"
+    },
+    {
+      "slug": "project-manager-fee",
+      "title": "项目经理费",
+      "definition": "按工程造价比例支付给现场项目经理的费用，宣传页常见约硬装造价的 2%，以签约合同为准。",
+      "category": "报价"
+    },
+    {
+      "slug": "custom-board-particle",
+      "title": "颗粒板定制",
+      "definition": "全屋定制柜体常用基材，性价比高，套餐标配 15㎡ 内，超出按延米或投影面积另计。",
+      "category": "定制"
+    },
+    {
+      "slug": "custom-board-solid",
+      "title": "实木芯定制",
+      "definition": "柜体采用实木芯材，相对颗粒板环保与质感更好，同套餐内通常加价约 3000 元（15㎡内）。",
+      "category": "定制"
+    },
+    {
+      "slug": "shower-enclosure",
+      "title": "淋浴房",
+      "definition": "卫生间干湿分离的玻璃隔断，套餐是否含淋浴房及面积上限（如 ≤3.6㎡）需签约前确认。",
+      "category": "卫浴"
+    },
+    {
+      "slug": "waterproof",
+      "title": "专业防水",
+      "definition": "阳台、卫生间等湿区地面及墙面的防水涂刷，常见品牌东方雨虹、西卡，需做闭水试验。",
+      "category": "硬装"
+    },
+    {
+      "slug": "tile",
+      "title": "地砖墙砖",
+      "definition": "客餐厅、厨房、卫生间等区域的瓷砖铺贴，品牌池与规格（如 800×800）影响造价与档次。",
+      "category": "硬装"
+    },
+    {
+      "slug": "putty",
+      "title": "腻子基层",
+      "definition": "墙面找平与批刮腻子，为乳胶漆打底，品牌与遍数影响平整度与环保。",
+      "category": "硬装"
+    },
+    {
+      "slug": "latex-paint",
+      "title": "乳胶漆",
+      "definition": "墙面顶面饰面涂料，常见多乐士、立邦、嘉宝莉等，注意 VOC 与耐擦洗指标。",
+      "category": "硬装"
+    },
+    {
+      "slug": "switch-socket",
+      "title": "开关插座",
+      "definition": "墙面电工面板，品牌如西门子、施耐德、公牛，系列不同价格差明显。",
+      "category": "水电"
+    },
+    {
+      "slug": "cabinet",
+      "title": "橱柜",
+      "definition": "厨房地柜+吊柜+台面系统，套餐常约定标配延米（如 3m 地柜 + 1.5m 吊柜），超出另计。",
+      "category": "定制"
+    },
+    {
+      "slug": "laminate-floor",
+      "title": "复合地板",
+      "definition": "卧室常用地面材料，强化复合或实木复合，含踢脚线，品牌影响耐磨与环保等级。",
+      "category": "硬装"
+    },
+    {
+      "slug": "bathroom-suite",
+      "title": "卫浴套装",
+      "definition": "浴室柜、龙头、马桶、花洒等卫浴主材组合，套餐品牌池常见九牧、箭牌、惠达。",
+      "category": "卫浴"
+    },
+    {
+      "slug": "area-tier-50-80",
+      "title": "50–80㎡ 计价档",
+      "definition": "圣都宣传页计价档位：50≤计价面积<80 时，AEs 超面积 +699/㎡，A5s 超面积 +799/㎡。",
+      "category": "报价"
+    },
+    {
+      "slug": "hard-base-price",
+      "title": "硬装基础价",
+      "definition": "套餐起步硬装造价（含约定面积内基础项目），AEs 50㎡档 65000 元，A5s 50㎡档 75800 元。",
+      "category": "报价"
+    },
+    {
+      "slug": "full-package-base",
+      "title": "全案基础价",
+      "definition": "硬装小计 + 标配定制（15㎡ 颗粒板 13000 或实木芯 16000），不含管理费与项目经理费。",
+      "category": "报价"
+    }
+  ],
+  "brands": [
+    { "slug": "tata", "name": "TATA木门", "categories": ["木门", "门套"], "tier": "first_tier", "aliases": ["TATA", "tata木门"], "summary": "国内一线木门品牌，以静音门、环保门著称，A5s 套餐可选。" },
+    { "slug": "sika", "name": "西卡", "categories": ["防水", "辅材"], "tier": "first_tier", "aliases": ["西卡防水"], "summary": "瑞士西卡，建筑防水系统知名品牌，A5s 阳台/卫生间防水可选。" },
+    { "slug": "philips", "name": "飞利浦", "categories": ["电线", "弱电"], "tier": "first_tier", "summary": "飞利浦电工产品线，A5s 强弱电可选品牌。" },
+    { "slug": "marco-polo", "name": "马可波罗", "categories": ["瓷砖"], "tier": "first_tier", "summary": "瓷砖一线品牌，仿古砖与全瓷砖常见。" },
+    { "slug": "dongpeng", "name": "东鹏瓷砖", "categories": ["瓷砖"], "tier": "first_tier", "summary": "瓷砖一线品牌。" },
+    { "slug": "dulux", "name": "多乐士", "categories": ["乳胶漆"], "tier": "first_tier", "summary": "阿克苏诺贝尔旗下涂料品牌。" },
+    { "slug": "yuhong", "name": "东方雨虹", "categories": ["防水", "腻子"], "tier": "first_tier", "summary": "国内建筑防水龙头，腻子与防水套餐常见。" },
+    { "slug": "siemens", "name": "西门子", "categories": ["开关插座"], "tier": "first_tier", "aliases": ["西门子开关"], "summary": "德系电工品牌，开关插座常见选择。" },
+    { "slug": "jomoo", "name": "九牧", "categories": ["卫浴"], "tier": "mainstream", "summary": "国产卫浴主流品牌。" },
+    { "slug": "arrow", "name": "箭牌", "categories": ["卫浴"], "tier": "mainstream", "summary": "卫浴陶瓷主流品牌。" },
+    { "slug": "huida", "name": "惠达", "categories": ["卫浴"], "tier": "mainstream", "summary": "卫浴陶瓷老牌企业。" },
+    { "slug": "del-floor", "name": "德尔地板", "categories": ["地板"], "tier": "mainstream", "aliases": ["德尔"], "summary": "强化复合地板主流品牌。" },
+    { "slug": "nature-floor", "name": "大自然", "categories": ["地板"], "tier": "first_tier", "summary": "实木地板与复合地板一线品牌，A5s 地板品牌池多此选项。" },
+    { "slug": "oppein", "name": "志邦家居", "categories": ["橱柜", "全屋定制"], "tier": "mainstream", "aliases": ["志邦"], "summary": "橱柜与全屋定制主流品牌。" },
+    { "slug": "goldenhome", "name": "金牌橱柜", "categories": ["橱柜"], "tier": "mainstream", "aliases": ["金牌"], "summary": "橱柜主流品牌，AEs 厨房标配。" },
+    { "slug": "aupu", "name": "奥普", "categories": ["集成吊顶"], "tier": "mainstream", "summary": "集成吊顶与浴霸常见品牌。" },
+    { "slug": "submarine", "name": "潜水艇", "categories": ["地漏", "五金"], "tier": "mainstream", "aliases": ["潜水艇地漏"], "summary": "地漏、角阀等五金常见品牌。" },
+    { "slug": "weixing", "name": "伟星管业", "categories": ["水管", "线管"], "tier": "mainstream", "aliases": ["伟星"], "summary": "PPR 水管与线管主流品牌。" },
+    { "slug": "rifeng", "name": "日丰", "categories": ["水管", "线管"], "tier": "mainstream", "summary": "PPR 水管主流品牌。" },
+    { "slug": "jilian-zhijia", "name": "建霖智家", "categories": ["淋浴房"], "tier": "mainstream", "summary": "淋浴房品牌，A5s 套餐明确含淋浴房。" }
+  ],
+  "wikiPages": [
+    {
+      "slug": "pricing-area-guide",
+      "title": "计价面积怎么算？",
+      "termSlug": "pricing-area",
+      "content": "## 什么是计价面积\n\n计价面积是装修公司报价用的面积，**不等于**房产证建筑面积，也**不等于**开发商售卖面积。\n\n## 圣都示例（76.34㎡）\n\n- 售卖面积：90㎡\n- 计价面积：76.34㎡\n- 落在 50≤面积<80 档\n\n签约前务必让门店按自家户型出正式报价单核对。"
+    },
+    {
+      "slug": "aes-vs-a5s-summary",
+      "title": "AEs vs A5s 怎么选",
+      "content": "## 预算优先 → AEs\n\n76.34㎡ 颗粒板含费预估约 **108,089** 元。\n\n## 品牌细节优先 → A5s\n\n同面积含费预估约 **123,404** 元，价差约 **15,315** 元。\n\n### A5s 主要多出的配置\n\n- 木门可选 **TATA**\n- 防水可选 **西卡**\n- 明确含 **淋浴房**（约 ≤3.6㎡）\n- 橱柜/地板品牌池更宽\n\n主材品牌池高度重合，价差主要买在门、线、防水、淋浴房与可选面。"
+    },
+    {
+      "slug": "tata-brand",
+      "title": "TATA 木门",
+      "brandSlug": "tata",
+      "content": "TATA 为国内一线木门品牌，以静音技术与环保板材著称。在圣都 A5s 套餐中，客餐厅门套、卧室木门可选 TATA，相对 AEs 是主要品牌升级点之一。"
+    },
+    {
+      "slug": "sika-brand",
+      "title": "西卡防水",
+      "brandSlug": "sika",
+      "content": "西卡（Sika）为瑞士建筑化学品巨头，家装防水涂料与系统解决方案常见。A5s 套餐阳台、卫生间防水品牌池含西卡，相对 AEs 仅东方雨虹多一个高端选项。"
+    }
+  ]
+}
