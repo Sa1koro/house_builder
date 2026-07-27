@@ -25,10 +25,10 @@ export async function POST(request: Request, { params }: { params: Promise<{ kin
     const remote = await fetch(process.env.ENRICH_API_URL, { method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${process.env.ENRICH_API_KEY}` }, body: JSON.stringify({ kind, query }) });
     if (remote.ok) Object.assign(normalized, await remote.json());
   }
-  const record = kind === "brand"
-    ? { slug: normalized.slug, name: normalized.title, category: "待分类", tier: "mainstream", summary: normalized.summary, source: "enrich", confidence: 0.3 }
-    : { slug: normalized.slug, title: normalized.title, summary: normalized.summary, source: "enrich", confidence: 0.3 };
-  const { data, error } = await admin.from(table).upsert(record).select().single();
+  const result = kind === "brand"
+    ? await admin.from("brands").upsert({ slug: normalized.slug, name: normalized.title, category: "待分类", tier: "mainstream", summary: normalized.summary, source: "enrich", confidence: 0.3 }).select().single()
+    : await admin.from("terms").upsert({ slug: normalized.slug, title: normalized.title, summary: normalized.summary, source: "enrich", confidence: 0.3 }).select().single();
+  const { data, error } = result;
   if (error) return Response.json({ error: error.message }, { status: 500 });
   await admin.from("enrich_jobs").insert({ query, kind, provider: process.env.ENRICH_API_URL ? "configured_api" : "draft_fallback", result_slug: normalized.slug });
   return Response.json({ data, cached: false });
