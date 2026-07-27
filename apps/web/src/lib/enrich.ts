@@ -66,13 +66,28 @@ export async function enrichEntity(kind: "brand" | "term", query: string) {
   const provider = process.env.ENRICH_API_URL ? new URL(process.env.ENRICH_API_URL).hostname : "unconfigured";
   try {
     const { raw, parsed } = await callProvider(kind, normalized);
-    const value = kind === "brand" ? brandResult.parse(parsed) : termResult.parse(parsed);
+    let entity: Record<string, unknown> & { id: string };
+    let value: z.infer<typeof brandResult> | z.infer<typeof termResult>;
+    if (kind === "brand") {
+      value = brandResult.parse(parsed);
+      const slug = safeSlug(value.slug || value.name);
+      const { data, error } = await admin.from("brands").upsert({
+        slug, name: value.name, category: value.category, tier: value.tier,
+        summary: value.summary, aliases: value.aliases, source: "enrich", confidence: 0.7,
+      }, { onConflict: "slug" }).select("*").single();
+      if (error) throw error;
+      entity = data;
+    } else {
+      value = termResult.parse(parsed);
+      const slug = safeSlug(value.slug || value.name);
+      const { data, error } = await admin.from("terms").upsert({
+        slug, name: value.name, summary: value.summary, aliases: value.aliases,
+        source: "enrich", confidence: 0.7,
+      }, { onConflict: "slug" }).select("*").single();
+      if (error) throw error;
+      entity = data;
+    }
     const slug = safeSlug(value.slug || value.name);
-    const row = kind === "brand"
-      ? { slug, name: value.name, category: (value as z.infer<typeof brandResult>).category, tier: (value as z.infer<typeof brandResult>).tier, summary: value.summary, aliases: value.aliases, source: "enrich", confidence: 0.7 }
-      : { slug, name: value.name, summary: value.summary, aliases: value.aliases, source: "enrich", confidence: 0.7 };
-    const { data: entity, error } = await admin.from(table).upsert(row, { onConflict: "slug" }).select("*").single();
-    if (error) throw error;
     await admin.from("wiki_pages").upsert({ slug, title: value.name, kind, entity_id: entity.id, body_md: value.wiki, source: "enrich", is_published: true }, { onConflict: "slug" });
     await admin.from("enrich_jobs").insert({ kind, query: normalized, provider, raw, result_id: entity.id, status: "created" });
     return { cached: false, entity };
