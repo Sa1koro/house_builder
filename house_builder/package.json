@@ -1,0 +1,16 @@
+{
+  "name": "house-builder",
+  "private": true,
+  "version": "0.1.0",
+  "description": "装修辅助产品种子 · 多用户方案对比 / Wiki / 品牌库",
+  "scripts": {
+    "dev": "pnpm --filter @house-builder/web dev",
+    "build": "pnpm --filter @house-builder/web build",
+    "lint": "pnpm --filter @house-builder/web lint",
+    "typecheck": "pnpm -r --if-present typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.33.3"
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.local/schemas/proposal.schema.json",
+  "title": "Proposal",
+  "description": "装修方案结构化数据（人类 + LLM / OCR 共用）",
+  "type": "object",
+  "required": ["company", "package_name", "costs", "line_items"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "house_id": { "type": "string", "format": "uuid" },
+    "company": { "type": "string", "minLength": 1 },
+    "package_name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "default": "1.0" },
+    "billing_area_sqm": { "type": "number", "minimum": 0 },
+    "sales_area_sqm": { "type": "number", "minimum": 0 },
+    "costs": {
+      "type": "object",
+      "required": ["hard_base", "hard_subtotal", "custom_particle", "base_particle"],
+      "additionalProperties": true,
+      "properties": {
+        "hard_base": { "type": "number" },
+        "overage_unit": { "type": "number" },
+        "overage_area": { "type": "number" },
+        "overage_fee": { "type": "number" },
+        "hard_subtotal": { "type": "number" },
+        "custom_particle": { "type": "number" },
+        "custom_solid": { "type": "number" },
+        "base_particle": { "type": "number" },
+        "base_solid": { "type": "number" },
+        "mgmt_fee": { "type": "number" },
+        "pm_fee": { "type": "number" },
+        "total_particle": { "type": "number" },
+        "total_solid": { "type": "number" },
+        "currency": { "type": "string", "default": "CNY" }
+      }
+    },
+    "line_items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/line_item" }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "source": {
+      "type": "string",
+      "enum": ["seed", "manual", "ocr_review", "import"]
+    }
+  },
+  "$defs": {
+    "line_item": {
+      "type": "object",
+      "required": ["space", "category", "spec"],
+      "additionalProperties": false,
+      "properties": {
+        "space": { "type": "string" },
+        "category": { "type": "string" },
+        "spec": { "type": "string" },
+        "brands": { "type": "array", "items": { "type": "string" } },
+        "term_slugs": { "type": "array", "items": { "type": "string" } },
+        "qty": { "type": "number" },
+        "unit": { "type": "string" },
+        "amount": { "type": "number" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

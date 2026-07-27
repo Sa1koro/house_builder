@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "billing-area",
+    "name": "计价面积",
+    "aliases": [
+      "计价面积",
+      "计费面积"
+    ],
+    "summary": "装修公司按此面积报价，通常小于房产商售卖面积；报价一律看计价面积。",
+    "category": "计价",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "billing-area"
+  },
+  {
+    "slug": "sales-area",
+    "name": "售卖面积",
+    "aliases": [
+      "售卖面积",
+      "建筑面积"
+    ],
+    "summary": "房产商对外销售的面积口径，可能含公摊；不等于装修计价面积。",
+    "category": "计价",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "sales-area"
+  },
+  {
+    "slug": "door-casing",
+    "name": "门套",
+    "aliases": [
+      "门套",
+      "门框套"
+    ],
+    "summary": "门洞四周的收口装饰结构，含侧板与线条，品牌常与木门绑定。",
+    "category": "木作",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "door-casing"
+  },
+  {
+    "slug": "power-wiring",
+    "name": "强电",
+    "aliases": [
+      "强电",
+      "强电电线"
+    ],
+    "summary": "照明与插座等市电回路用电线，强调载流与安全认证。",
+    "category": "水电",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "power-wiring"
+  },
+  {
+    "slug": "weak-current",
+    "name": "弱电",
+    "aliases": [
+      "弱电",
+      "弱电电线"
+    ],
+    "summary": "网线、电视、对讲等低电压信号线路。",
+    "category": "水电",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "weak-current"
+  },
+  {
+    "slug": "mgmt-fee",
+    "name": "工程管理费",
+    "aliases": [
+      "工程管理费",
+      "管理费"
+    ],
+    "summary": "常见按硬装费用一定比例收取；多数方案定制部分免收。",
+    "category": "费用",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "mgmt-fee"
+  },
+  {
+    "slug": "pm-fee",
+    "name": "项目经理费",
+    "aliases": [
+      "项目经理跟踪服务费",
+      "项目经理费"
+    ],
+    "summary": "项目管理跟踪服务费用，宣传页常按硬装约 2% 估算，签约以合同为准。",
+    "category": "费用",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "pm-fee"
+  },
+  {
+    "slug": "particle-board",
+    "name": "颗粒板",
+    "aliases": [
+      "颗粒板",
+      "刨花板"
+    ],
+    "summary": "定制柜常见基材，性价比高；同档内通常比实木芯便宜。",
+    "category": "定制",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "particle-board"
+  },
+  {
+    "slug": "solid-core",
+    "name": "实木芯",
+    "aliases": [
+      "实木芯",
+      "实木颗粒板"
+    ],
+    "summary": "定制柜升级基材，同产品内相对颗粒板约 +3000（15㎡标配量内）。",
+    "category": "定制",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "solid-core"
+  },
+  {
+    "slug": "shower-enclosure",
+    "name": "淋浴房",
+    "aliases": [
+      "淋浴房",
+      "淋浴隔断"
+    ],
+    "summary": "卫浴干湿分离构件；A5s 宣传页明确含，AEs 是否计入需向门店确认。",
+    "category": "卫浴",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "shower-enclosure"
+  },
+  {
+    "slug": "custom-cabinetry",
+    "name": "全屋定制",
+    "aliases": [
+      "全屋定制",
+      "定制柜"
+    ],
+    "summary": "橱柜、衣柜等工厂定制柜体，常按㎡计价并含标配量。",
+    "category": "定制",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "custom-cabinetry"
+  },
+  {
+    "slug": "hard-fitout",
+    "name": "硬装",
+    "aliases": [
+      "硬装",
+      "硬装基础价"
+    ],
+    "summary": "墙顶地水电等基础装修部分，通常是管理费计算基数。",
+    "category": "费用",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "hard-fitout"
+  },
+  {
+    "slug": "concealed-works",
+    "name": "隐蔽工程",
+    "aliases": [
+      "隐蔽工程"
+    ],
+    "summary": "水电、防水等完工后被覆盖的工程，质保年限通常更长。",
+    "category": "售后",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "concealed-works"
+  },
+  {
+    "slug": "overage-fee",
+    "name": "超面积费用",
+    "aliases": [
+      "超面积",
+      "超面积单价"
+    ],
+    "summary": "计价面积超出档位起步面积时，按超出㎡×单价加收。",
+    "category": "费用",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "overage-fee"
+  },
+  {
+    "slug": "base-package-price",
+    "name": "全案基础价",
+    "aliases": [
+      "全案基础价"
+    ],
+    "summary": "硬装小计 + 定制（通常不含管理费/项目经理费）。",
+    "category": "费用",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "base-package-price"
+  },
+  {
+    "slug": "skirting",
+    "name": "踢脚线",
+    "aliases": [
+      "踢脚线"
+    ],
+    "summary": "墙地交接处的收口线条，常与地砖/地板配套。",
+    "category": "木作",
+    "source": "seed",
+    "confidence": 0.95,
+    "wiki_slug": "skirting"
+  },
+  {
+    "slug": "putty-base",
+    "name": "腻子基层",
+    "aliases": [
+      "腻子",
+      "腻子基层"
+    ],
+    "summary": "墙面找平基层，影响漆面平整度。",
+    "category": "墙面",
+    "source": "seed",
+    "confidence": 0.95,
+    "wiki_slug": "putty-base"
+  },
+  {
+    "slug": "integrated-ceiling",
+    "name": "集成吊顶",
+    "aliases": [
+      "集成吊顶"
+    ],
+    "summary": "厨房/卫生间常见模块化吊顶，可集成照明与换气。",
+    "category": "吊顶",
+    "source": "seed",
+    "confidence": 0.95,
+    "wiki_slug": "integrated-ceiling"
+  },
+  {
+    "slug": "waterproofing",
+    "name": "专业防水",
+    "aliases": [
+      "防水",
+      "专业防水"
+    ],
+    "summary": "厨卫阳台等潮湿区域的防水层施工与材料。",
+    "category": "防水",
+    "source": "seed",
+    "confidence": 1.0,
+    "wiki_slug": "waterproofing"
+  },
+  {
+    "slug": "ppr-pipe",
+    "name": "给水管PPR",
+    "aliases": [
+      "PPR",
+      "给水管"
+    ],
+    "summary": "冷热水给水常用塑料管材体系。",
+    "category": "水电",
+    "source": "seed",
+    "confidence": 0.95,
+    "wiki_slug": "ppr-pipe"
+  }
+]

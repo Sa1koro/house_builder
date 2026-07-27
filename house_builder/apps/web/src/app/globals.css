@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #14221c;
+  --muted: #5c6b63;
+  --paper: #f3f6f2;
+  --paper-2: #e7eee8;
+  --sage: #2f6b4f;
+  --sage-deep: #1e4a37;
+  --lime-mist: #cfe3d4;
+  --sand: #d9cfc0;
+  --line: rgba(20, 34, 28, 0.12);
+  --danger: #9b3b2f;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
+  --color-lime-mist: var(--lime-mist);
+  --color-sand: var(--sand);
+  --color-line: var(--line);
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-syne);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(207, 227, 212, 0.9), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(217, 207, 192, 0.55), transparent 50%),
+    linear-gradient(180deg, #f7faf6 0%, #eef3ef 45%, #e8efe9 100%);
+  font-family: var(--font-figtree), "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.display {
+  font-family: var(--font-syne), "PingFang SC", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.fade-up {
+  animation: fade-up 0.7s ease both;
+}
+
+.fade-up-delay {
+  animation: fade-up 0.8s ease 0.12s both;
+}
+
+.fade-up-delay-2 {
+  animation: fade-up 0.85s ease 0.22s both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.term-hint {
+  border-bottom: 1px dashed rgba(47, 107, 79, 0.55);
+  cursor: help;
+  color: var(--sage-deep);
+}
+
+.term-pop {
+  position: absolute;
+  z-index: 40;
+  width: min(280px, 70vw);
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 30px rgba(20, 34, 28, 0.08);
+  backdrop-filter: blur(8px);
+  animation: pop-in 0.18s ease both;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.prose-wiki h1,
+.prose-wiki h2 {
+  font-family: var(--font-syne), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.prose-wiki p {
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.prose-wiki a {
+  color: var(--sage);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

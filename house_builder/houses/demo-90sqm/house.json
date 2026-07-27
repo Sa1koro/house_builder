@@ -1,0 +1,10 @@
+{
+  "id": "aaaaaaaa-bbbb-cccc-dddd-000000000001",
+  "name": "Demo · 90㎡ 示例房（圣都 AEs vs A5s）",
+  "city": "杭州",
+  "layout": "两室一厅一卫",
+  "sales_area_sqm": 90,
+  "billing_area_sqm": 76.34,
+  "is_public_demo": true,
+  "notes": "公开示例：售卖面积 90㎡，计价面积 76.34㎡，落在 50≤面积<80 档。"
+}

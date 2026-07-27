@@ -1,0 +1,471 @@
+[
+  {
+    "slug": "tata",
+    "name": "TATA木门",
+    "aliases": [
+      "TATA",
+      "tata"
+    ],
+    "categories": [
+      "木门",
+      "门套"
+    ],
+    "tier": "first_line",
+    "summary": "国内知名木门品牌，常见于中高端整装升级选项。",
+    "source": "seed",
+    "confidence": 0.95
+  },
+  {
+    "slug": "sika",
+    "name": "西卡",
+    "aliases": [
+      "西卡",
+      "Sika",
+      "SIKA"
+    ],
+    "categories": [
+      "防水"
+    ],
+    "tier": "premium",
+    "summary": "国际建材化工品牌，防水材料口碑较好，常见于升级选项。",
+    "source": "seed",
+    "confidence": 0.95
+  },
+  {
+    "slug": "philips",
+    "name": "飞利浦",
+    "aliases": [
+      "飞利浦",
+      "Philips"
+    ],
+    "categories": [
+      "电线",
+      "强电",
+      "弱电"
+    ],
+    "tier": "first_line",
+    "summary": "国际电器品牌，整装方案中偶作电线升级选项。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "daziran",
+    "name": "大自然",
+    "aliases": [
+      "大自然"
+    ],
+    "categories": [
+      "地板"
+    ],
+    "tier": "first_line",
+    "summary": "国内知名地板品牌，A5s 卧室地板可选池中较 AEs 多出。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "dongfang-yuhong",
+    "name": "东方雨虹",
+    "aliases": [
+      "东方雨虹",
+      "雨虹"
+    ],
+    "categories": [
+      "防水",
+      "腻子"
+    ],
+    "tier": "first_line",
+    "summary": "国内防水与建材龙头，整装标配常见。",
+    "source": "seed",
+    "confidence": 0.95
+  },
+  {
+    "slug": "dulux",
+    "name": "多乐士",
+    "aliases": [
+      "多乐士",
+      "Dulux"
+    ],
+    "categories": [
+      "乳胶漆"
+    ],
+    "tier": "first_line",
+    "summary": "国际涂料品牌，乳胶漆主流选择。",
+    "source": "seed",
+    "confidence": 0.95
+  },
+  {
+    "slug": "carpoly",
+    "name": "嘉宝莉",
+    "aliases": [
+      "嘉宝莉"
+    ],
+    "categories": [
+      "乳胶漆"
+    ],
+    "tier": "mainstream",
+    "summary": "国内涂料品牌，常与多乐士并列可选。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "marcopolo",
+    "name": "马可波罗",
+    "aliases": [
+      "马可波罗"
+    ],
+    "categories": [
+      "瓷砖"
+    ],
+    "tier": "first_line",
+    "summary": "瓷砖主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "dongpeng",
+    "name": "东鹏",
+    "aliases": [
+      "东鹏"
+    ],
+    "categories": [
+      "瓷砖"
+    ],
+    "tier": "first_line",
+    "summary": "瓷砖主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "oceano",
+    "name": "欧神诺",
+    "aliases": [
+      "欧神诺"
+    ],
+    "categories": [
+      "瓷砖"
+    ],
+    "tier": "mainstream",
+    "summary": "瓷砖品牌，整装可选池常见。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "monalisa",
+    "name": "蒙娜丽莎",
+    "aliases": [
+      "蒙娜丽莎"
+    ],
+    "categories": [
+      "瓷砖"
+    ],
+    "tier": "first_line",
+    "summary": "瓷砖品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "zhibang",
+    "name": "志邦",
+    "aliases": [
+      "志邦"
+    ],
+    "categories": [
+      "全屋定制",
+      "橱柜"
+    ],
+    "tier": "first_line",
+    "summary": "定制家居一线品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "goldmedal",
+    "name": "金牌",
+    "aliases": [
+      "金牌厨柜",
+      "金牌"
+    ],
+    "categories": [
+      "全屋定制",
+      "橱柜"
+    ],
+    "tier": "first_line",
+    "summary": "定制家居一线品牌；AEs 厨房橱柜默认金牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "moganshan",
+    "name": "莫干山",
+    "aliases": [
+      "莫干山"
+    ],
+    "categories": [
+      "全屋定制",
+      "地板"
+    ],
+    "tier": "mainstream",
+    "summary": "板材/定制常见品牌。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "tubao",
+    "name": "兔宝宝",
+    "aliases": [
+      "兔宝宝"
+    ],
+    "categories": [
+      "全屋定制"
+    ],
+    "tier": "mainstream",
+    "summary": "板材品牌，定制可选。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "der",
+    "name": "德尔",
+    "aliases": [
+      "德尔"
+    ],
+    "categories": [
+      "地板"
+    ],
+    "tier": "mainstream",
+    "summary": "复合地板常见品牌。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "sxmd",
+    "name": "书香门地",
+    "aliases": [
+      "书香门地"
+    ],
+    "categories": [
+      "地板"
+    ],
+    "tier": "first_line",
+    "summary": "地板品牌，偏中高端。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "jiumu",
+    "name": "九牧",
+    "aliases": [
+      "九牧"
+    ],
+    "categories": [
+      "卫浴"
+    ],
+    "tier": "first_line",
+    "summary": "卫浴五金主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "arrow",
+    "name": "箭牌",
+    "aliases": [
+      "箭牌"
+    ],
+    "categories": [
+      "卫浴"
+    ],
+    "tier": "mainstream",
+    "summary": "卫浴品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "huida",
+    "name": "惠达",
+    "aliases": [
+      "惠达"
+    ],
+    "categories": [
+      "卫浴"
+    ],
+    "tier": "mainstream",
+    "summary": "卫浴品牌。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "siemens",
+    "name": "西门子",
+    "aliases": [
+      "西门子",
+      "Siemens"
+    ],
+    "categories": [
+      "开关插座"
+    ],
+    "tier": "first_line",
+    "summary": "开关插座一线品牌。",
+    "source": "seed",
+    "confidence": 0.95
+  },
+  {
+    "slug": "weixing",
+    "name": "伟星",
+    "aliases": [
+      "伟星"
+    ],
+    "categories": [
+      "管材"
+    ],
+    "tier": "first_line",
+    "summary": "PPR 给水管主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "rifeng",
+    "name": "日丰",
+    "aliases": [
+      "日丰"
+    ],
+    "categories": [
+      "管材"
+    ],
+    "tier": "first_line",
+    "summary": "管材主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "gongyuan",
+    "name": "公元",
+    "aliases": [
+      "公元"
+    ],
+    "categories": [
+      "管材"
+    ],
+    "tier": "mainstream",
+    "summary": "管材品牌。",
+    "source": "seed",
+    "confidence": 0.85
+  },
+  {
+    "slug": "shengsheng",
+    "name": "升升概念",
+    "aliases": [
+      "升升概念"
+    ],
+    "categories": [
+      "木门",
+      "门套"
+    ],
+    "tier": "mainstream",
+    "summary": "木门/门套可选品牌。",
+    "source": "seed",
+    "confidence": 0.8
+  },
+  {
+    "slug": "oppein-door",
+    "name": "江山欧派",
+    "aliases": [
+      "江山欧派",
+      "欧派木门"
+    ],
+    "categories": [
+      "木门",
+      "门套"
+    ],
+    "tier": "mainstream",
+    "summary": "木门品牌。",
+    "source": "seed",
+    "confidence": 0.8
+  },
+  {
+    "slug": "paidemen",
+    "name": "派的门",
+    "aliases": [
+      "派的门"
+    ],
+    "categories": [
+      "木门",
+      "门套"
+    ],
+    "tier": "mainstream",
+    "summary": "木门品牌。",
+    "source": "seed",
+    "confidence": 0.8
+  },
+  {
+    "slug": "aupu",
+    "name": "奥普",
+    "aliases": [
+      "奥普"
+    ],
+    "categories": [
+      "集成吊顶"
+    ],
+    "tier": "first_line",
+    "summary": "集成吊顶/浴霸常见品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "midea",
+    "name": "美的",
+    "aliases": [
+      "美的"
+    ],
+    "categories": [
+      "集成吊顶",
+      "电器"
+    ],
+    "tier": "first_line",
+    "summary": "家电品牌，吊顶电器可选。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "submarine",
+    "name": "潜水艇",
+    "aliases": [
+      "潜水艇"
+    ],
+    "categories": [
+      "地漏"
+    ],
+    "tier": "first_line",
+    "summary": "地漏主流品牌。",
+    "source": "seed",
+    "confidence": 0.9
+  },
+  {
+    "slug": "jianlin",
+    "name": "建霖智家",
+    "aliases": [
+      "建霖智家",
+      "建霖"
+    ],
+    "categories": [
+      "淋浴房"
+    ],
+    "tier": "mainstream",
+    "summary": "A5s 明确含淋浴房品牌选项之一。",
+    "source": "seed",
+    "confidence": 0.8
+  },
+  {
+    "slug": "olin",
+    "name": "欧琳",
+    "aliases": [
+      "欧琳"
+    ],
+    "categories": [
+      "水槽"
+    ],
+    "tier": "mainstream",
+    "summary": "厨房水槽品牌。",
+    "source": "seed",
+    "confidence": 0.85
+  }
+]

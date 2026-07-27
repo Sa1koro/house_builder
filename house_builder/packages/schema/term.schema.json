@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.local/schemas/term.schema.json",
+  "title": "Term",
+  "type": "object",
+  "required": ["slug", "name", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "minLength": 1 },
+    "category": { "type": "string" },
+    "source": { "type": "string", "enum": ["seed", "enrich", "editor"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "wiki_slug": { "type": "string" }
+  }
+}
