@@ -1,0 +1,9 @@
+{
+  "name": "@house-builder/schema",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./proposal.schema.json": "./proposal.schema.json"
+  }
+}

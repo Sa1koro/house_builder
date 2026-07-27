@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "House Builder proposal draft",
+  "type": "object",
+  "required": ["company", "package_name", "version", "usable_area_sqm", "pricing", "line_items"],
+  "properties": {
+    "company": { "type": "string", "minLength": 1 },
+    "package_name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string" },
+    "usable_area_sqm": { "type": "number", "exclusiveMinimum": 0 },
+    "pricing": { "type": "object", "additionalProperties": { "type": "number" } },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["room", "category", "item_name", "term_slugs"],
+        "properties": {
+          "room": { "type": "string" },
+          "category": { "type": "string" },
+          "item_name": { "type": "string" },
+          "brand_name": { "type": "string" },
+          "specification": { "type": "string" },
+          "amount": { "type": "number" },
+          "term_slugs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
