@@ -1,0 +1,60 @@
+{
+  "company": "圣都整装",
+  "package_name": "AEs",
+  "version": "OCR draft",
+  "pricing": {
+    "currency": "CNY",
+    "items": [
+      {
+        "key": "hard_base",
+        "label": "硬装基础价 65000元",
+        "amount": 65000.0,
+        "note": "OCR 提取，待校对"
+      },
+      {
+        "key": "over_area",
+        "label": "超面积 699元/平",
+        "amount": 699.0,
+        "note": "OCR 提取，待校对"
+      },
+      {
+        "key": "mgmt_fee",
+        "label": "工程管理费 12% 10009.40",
+        "amount": 10009.4,
+        "note": "OCR 提取，待校对"
+      }
+    ]
+  },
+  "line_items": [
+    {
+      "space": "客餐厅",
+      "category": "地砖",
+      "brands": [
+        "马可波罗",
+        "东鹏",
+        "欧神诺"
+      ],
+      "note": "OCR 提取，待校对"
+    },
+    {
+      "space": "厨房",
+      "category": "橱柜",
+      "brands": [
+        "金牌"
+      ],
+      "note": "OCR 提取，待校对"
+    },
+    {
+      "space": "卫生间",
+      "category": "专业防水",
+      "brands": [
+        "东方雨虹"
+      ],
+      "note": "OCR 提取，待校对"
+    }
+  ],
+  "notes": [
+    "[OCR] 圣都整装 AEs 硬装全案",
+    "[OCR] 本套餐不含拆改"
+  ]
+}

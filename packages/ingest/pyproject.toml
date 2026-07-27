@@ -1,0 +1,20 @@
+[project]
+name = "house-builder-ingest"
+version = "0.1.0"
+description = "本地 OCR ingest worker：Blob 原件 → draft Proposal JSON → 推回 Web API 供校对"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+# 二选一（或都不装，用 --text 提供已有文本）
+paddle = ["paddleocr>=2.7", "paddlepaddle>=2.6"]
+tesseract = ["pytesseract>=0.3.10", "Pillow>=10.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ingest"]
