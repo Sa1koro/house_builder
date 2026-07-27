@@ -1,0 +1,40 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "name": "90㎡ 三居装修方案 Demo",
+  "city": "杭州",
+  "layout": "三室两厅",
+  "saleArea": 90,
+  "pricingArea": 76.34,
+  "isPublicDemo": true,
+  "source": {
+    "workbook": "AEs_vs_A5s_硬装对比_76.34㎡.xlsx",
+    "generator": "extract_brochure_to_xlsx.py",
+    "note": "宣传页 OCR 后人工核对"
+  },
+  "proposals": [
+    {
+      "id": "00000000-0000-4000-8000-000000000011",
+      "company": "圣都整装",
+      "packageName": "AEs",
+      "costs": {
+        "hardFit": 83413.66,
+        "customization": 13000,
+        "management": 10009.64,
+        "projectManager": 1668.27,
+        "total": 108091.57
+      }
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000012",
+      "company": "圣都整装",
+      "packageName": "A5s",
+      "costs": {
+        "hardFit": 96846.66,
+        "customization": 13000,
+        "management": 11621.6,
+        "projectManager": 1936.93,
+        "total": 123405.19
+      }
+    }
+  ]
+}

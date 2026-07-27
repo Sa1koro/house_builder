@@ -1,0 +1,10 @@
+{
+  "name": "@home-builder/schema",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./proposal.schema.json": "./proposal.schema.json"
+  }
+}
