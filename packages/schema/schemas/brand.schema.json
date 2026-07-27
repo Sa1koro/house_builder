@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.dev/schemas/brand.schema.json",
+  "title": "Brand",
+  "description": "供应商/品牌条目（公共知识，跨用户复用）",
+  "type": "object",
+  "required": ["slug", "name", "tier"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "description": "品牌中文名，如：马可波罗" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "别名/英文名/常见误写，如 [\"Marco Polo\", \"马可波罗瓷砖\"]"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "所属品类，如 [\"瓷砖\"]、[\"防水\", \"辅材\"]"
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["entry", "mainstream", "premium", "luxury"],
+      "description": "档次：entry=入门 mainstream=主流 premium=一线 luxury=高端"
+    },
+    "one_liner": { "type": "string", "description": "一句话介绍（对比页/悬停展示）" },
+    "country": { "type": "string", "description": "品牌所属国家/地区" },
+    "source": {
+      "type": "string",
+      "enum": ["seed", "enrich", "editor"],
+      "description": "条目来源：seed=首批种子 enrich=外搜补全 editor=人工编辑"
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}

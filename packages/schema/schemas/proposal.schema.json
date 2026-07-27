@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.dev/schemas/proposal.schema.json",
+  "title": "Proposal",
+  "description": "一份装修方案（套餐报价）的结构化表示。人工录入、OCR draft、LLM 解析共用此 schema。",
+  "type": "object",
+  "required": ["company", "package_name", "pricing", "line_items"],
+  "properties": {
+    "company": {
+      "type": "string",
+      "description": "装修公司名，如：圣都整装"
+    },
+    "package_name": {
+      "type": "string",
+      "description": "套餐名，如：AEs / A5s"
+    },
+    "version": {
+      "type": "string",
+      "description": "方案版本或报价日期，如：2025-07"
+    },
+    "billing_area_sqm": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "计价面积（㎡），报价以此为准，≠ 售卖面积"
+    },
+    "pricing": {
+      "type": "object",
+      "description": "总价拆解。items 为逐项费用，totals 为汇总。",
+      "required": ["currency", "items"],
+      "properties": {
+        "currency": { "type": "string", "default": "CNY" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "label", "amount"],
+            "properties": {
+              "key": {
+                "type": "string",
+                "description": "机器可读键，如 hard_base / over_area / custom_particle / mgmt_fee / pm_fee"
+              },
+              "label": { "type": "string", "description": "人类可读名称" },
+              "amount": { "type": "number" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "total_base": {
+          "type": "number",
+          "description": "全案基础价（不含管理费等）"
+        },
+        "total_with_fees": {
+          "type": "number",
+          "description": "含管理费/项目经理费的预估总价"
+        }
+      }
+    },
+    "line_items": {
+      "type": "array",
+      "description": "配置明细：空间 × 品类 × 品牌池",
+      "items": {
+        "type": "object",
+        "required": ["space", "category"],
+        "properties": {
+          "space": {
+            "type": "string",
+            "description": "空间，如：客餐厅 / 厨房 / 卧室 / 阳台 / 卫生间 / 辅材 / 其它工程 / 售后"
+          },
+          "category": { "type": "string", "description": "品类，如：地砖+踢脚线" },
+          "brands": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "可选品牌池，如 [\"马可波罗\", \"东鹏\"]"
+          },
+          "spec": { "type": "string", "description": "规格/数量说明，如：约3m地柜+1.5m吊柜" },
+          "term_slugs": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+            "description": "关联的装修名词 slug，用于对比页悬停释义"
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "整案备注，如：不含拆改、管理费基数以合同为准"
+    }
+  }
+}

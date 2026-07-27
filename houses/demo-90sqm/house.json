@@ -1,0 +1,10 @@
+{
+  "id": "00000000-0000-4000-8000-00000000d001",
+  "name": "示例房 · 售卖90㎡ / 计价76.34㎡",
+  "city": "杭州",
+  "layout": "两室两厅一卫",
+  "sales_area_sqm": 90,
+  "billing_area_sqm": 76.34,
+  "is_public_demo": true,
+  "note": "系统预置公开示例房：圣都整装 AEs vs A5s 硬装全案对比。数据来自宣传长图 OCR + 人工核对（见 source/）。"
+}

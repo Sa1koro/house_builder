@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://house-builder.dev/schemas/term.schema.json",
+  "title": "Term",
+  "description": "装修名词条目（公共知识，供 TermHint 悬停与 Wiki 页使用）",
+  "type": "object",
+  "required": ["slug", "name", "short_def"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "description": "名词，如：门套 / 计价面积" },
+    "short_def": { "type": "string", "description": "一句话释义（悬停展示，建议 ≤80 字）" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "wiki_md": { "type": "string", "description": "可选：Wiki 长文 Markdown，导入时生成 wiki_pages" },
+    "source": { "type": "string", "enum": ["seed", "enrich", "editor"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}

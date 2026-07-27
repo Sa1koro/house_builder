@@ -1,0 +1,60 @@
+{
+  "id": "00000000-0000-4000-8000-0000000000ae",
+  "company": "圣都整装",
+  "package_name": "AEs",
+  "version": "2025-07 宣传页",
+  "billing_area_sqm": 76.34,
+  "pricing": {
+    "currency": "CNY",
+    "items": [
+      { "key": "hard_base", "label": "硬装基础价(50㎡档)", "amount": 65000, "note": "宣传页档位起步硬装价" },
+      { "key": "over_area", "label": "超面积费用", "amount": 18411.66, "note": "(76.34-50)㎡ × 699元/㎡" },
+      { "key": "custom_particle", "label": "定制-颗粒板(15㎡)", "amount": 13000, "note": "标配定制量；实木芯为 16000（+3000）" },
+      { "key": "mgmt_fee", "label": "工程管理费12%(硬装)", "amount": 10009.4, "note": "基数为硬装小计 83411.66，定制免收" },
+      { "key": "pm_fee", "label": "项目经理费2%(硬装估)", "amount": 1668.23, "note": "签约以合同为准" }
+    ],
+    "total_base": 96411.66,
+    "total_with_fees": 108089.29
+  },
+  "line_items": [
+    { "space": "客餐厅", "category": "地砖+踢脚线", "brands": ["马可波罗", "东鹏", "欧神诺", "蒙娜丽莎"], "term_slugs": ["ti-jiao-xian", "zhu-cai"] },
+    { "space": "客餐厅", "category": "腻子基层", "brands": ["东方雨虹"], "term_slugs": ["ni-zi"] },
+    { "space": "客餐厅", "category": "乳胶漆", "brands": ["多乐士", "嘉宝莉"], "term_slugs": ["ru-jiao-qi"] },
+    { "space": "客餐厅", "category": "入户/门套", "brands": ["升升概念", "江山欧派", "派的门"], "term_slugs": ["men-tao"] },
+    { "space": "客餐厅", "category": "窗台石", "spec": "天然石/人造石/岩板", "term_slugs": ["chuang-tai-shi"] },
+    { "space": "客餐厅", "category": "强电电线", "brands": ["中大元通", "东方电缆"], "term_slugs": ["qiang-dian"] },
+    { "space": "客餐厅", "category": "弱电电线", "brands": ["永鼎"], "term_slugs": ["ruo-dian"] },
+    { "space": "客餐厅", "category": "线管底盒", "brands": ["伟星", "日丰", "公元"], "term_slugs": ["xian-guan-di-he"] },
+    { "space": "客餐厅", "category": "开关插座", "brands": ["西门子"] },
+    { "space": "客餐厅", "category": "全屋定制品牌", "brands": ["志邦", "金牌", "莫干山", "兔宝宝"], "term_slugs": ["quan-wu-ding-zhi", "ke-li-ban", "shi-mu-xin"] },
+    { "space": "厨房", "category": "地砖墙砖", "brands": ["马可波罗", "东鹏", "欧神诺", "蒙娜丽莎"], "term_slugs": ["zhu-cai"] },
+    { "space": "厨房", "category": "集成吊顶+电器", "brands": ["奥普", "美的"], "term_slugs": ["ji-cheng-diao-ding"] },
+    { "space": "厨房", "category": "橱柜", "brands": ["金牌"], "spec": "约3m地柜+1.5m吊柜", "term_slugs": ["quan-wu-ding-zhi"] },
+    { "space": "厨房", "category": "台面", "brands": ["厨之宝", "欧铂利"] },
+    { "space": "厨房", "category": "水槽+龙头", "brands": ["欧琳", "诺帝玛"] },
+    { "space": "厨房", "category": "金属移门", "brands": ["卡帝", "德诺克"] },
+    { "space": "厨房", "category": "门套", "brands": ["升升概念", "江山欧派", "派的门"], "term_slugs": ["men-tao"] },
+    { "space": "卧室", "category": "复合地板+踢脚线", "brands": ["德尔", "莫干山", "书香门地"], "term_slugs": ["ti-jiao-xian"] },
+    { "space": "卧室", "category": "木开门+五金", "brands": ["升升概念", "派的门", "江山欧派"], "term_slugs": ["men-tao"] },
+    { "space": "卧室", "category": "腻子/乳胶漆", "brands": ["东方雨虹", "多乐士", "嘉宝莉"], "term_slugs": ["ni-zi", "ru-jiao-qi"] },
+    { "space": "阳台", "category": "地砖+踢脚线", "brands": ["马可波罗", "东鹏", "欧神诺", "蒙娜丽莎"], "term_slugs": ["ti-jiao-xian"] },
+    { "space": "阳台", "category": "专业防水", "brands": ["东方雨虹"], "term_slugs": ["fang-shui"] },
+    { "space": "阳台", "category": "地漏", "brands": ["潜水艇"], "term_slugs": ["di-lou"] },
+    { "space": "卫生间", "category": "地砖墙砖", "brands": ["马可波罗", "东鹏", "欧神诺", "蒙娜丽莎"], "term_slugs": ["zhu-cai"] },
+    { "space": "卫生间", "category": "专业防水", "brands": ["东方雨虹"], "term_slugs": ["fang-shui"] },
+    { "space": "卫生间", "category": "集成吊顶+电器", "brands": ["奥普", "美的"], "term_slugs": ["ji-cheng-diao-ding"] },
+    { "space": "卫生间", "category": "浴室柜/龙头/马桶/花洒", "brands": ["九牧", "箭牌", "惠达"] },
+    { "space": "卫生间", "category": "淋浴房", "note": "宣传页本段未明确单列", "term_slugs": ["lin-yu-fang"] },
+    { "space": "卫生间", "category": "木门", "brands": ["升升概念", "江山欧派", "派的门"], "term_slugs": ["men-tao"] },
+    { "space": "辅材", "category": "给水管PPR", "brands": ["伟星", "日丰", "公元"], "term_slugs": ["ppr-gei-shui-guan", "fu-cai"] },
+    { "space": "辅材", "category": "防水/腻子/石膏", "brands": ["东方雨虹"], "term_slugs": ["fang-shui", "ni-zi", "fu-cai"] },
+    { "space": "其它工程", "category": "垃圾袋/成品保护/竣工保洁", "note": "含", "term_slugs": ["cheng-pin-bao-hu", "jun-gong-bao-jie"] },
+    { "space": "售后", "category": "服务承诺", "note": "十诺 / 14815 / 隐蔽约5年", "term_slugs": ["yin-bi-gong-cheng"] }
+  ],
+  "notes": [
+    "不含拆改、个性化设计、现场木作等，按实结算。",
+    "管理费/项目经理费基数以合同为准。",
+    "材料以展厅实物为准，品牌会调整。",
+    "售卖面积 90㎡ ≠ 计价面积 76.34㎡，报价按计价面积。"
+  ]
+}
